@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap');
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: .9rem;
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+}
+
+main {
+    margin: 10px auto;
+    width: 76vw;
+}
+header {
+    background-color: rgb(77, 160, 121);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header  p {
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom:  10px;
+}
+
+h1 {
+    margin: 0px;
+    color: white;
+}
+
+h2 {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.image img {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+ span {
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(77, 160, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.wrapper span  {
+    margin-right: 15px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+aside {
+    width: max-content;
+    background-color: white;
+    border-right: 3px solid rgb(77, 160, 121);
+    padding: 10px 20px 0px 15px;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+
+aside > div {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.container {
+    color: black;
+    background-color: white;
+    padding:10px 0px 0px 30px;
+
+}
+
+.container p, li {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.sub-heading {
+    margin-bottom: 34px;
+    font-weight: normal;
+    padding-left: 20%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    
+}
+aside a { 
+    color: black;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1.4px solid rgb(97, 95, 95);
+}
+
+.mobile {
+    display: none;
+}
+
+section img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    background-color: lightgreen;
+}
+.edu-sector ul{
+    display: flex;
+    justify-content: space-around;
+}
+.edu-sector li{
+    padding: 2em;
+    list-style-type: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 90vw;
+        font-size: .9em;
+    }
+    .container {
+        width: auto;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+    .mobile {
+        display: flex;
+    }
+
+    aside {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.781);
+    }
+    .edu-sector ul{
+        display: block;
+        justify-content: space-around;
+    }
+  
+}
