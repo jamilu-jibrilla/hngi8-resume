@@ -9,7 +9,6 @@ body {
 
 main {
     margin: 10px auto;
-    width: 76vw;
 }
 header {
     background-color: rgb(77, 160, 121);
@@ -18,7 +17,12 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 76vw;
+    margin: 0px auto;
+    border-top-right-radius: 5px ;
+    border-top-left-radius: 5px ;
 }
 
 header  p {
@@ -70,14 +74,16 @@ span:hover {
 
 .wrapper {
     display: flex;
+    width: 76vw;
+    margin: 0px auto;
+
 }
 
 
 aside {
-    width: max-content;
     background-color: white;
     border-right: 3px solid rgb(77, 160, 121);
-    padding: 10px 20px 0px 15px;
+    padding: 11px 20px 0px 15px;
     height: 100vh;
     position: sticky;
     top: 0px;
@@ -91,17 +97,15 @@ aside > div {
 .container {
     color: black;
     background-color: white;
-    padding:10px 0px 0px 30px;
-
+    padding:10px 20px 0px 30px;
 }
 
 .container p, li {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.85);
 }
 
 .sub-heading {
     margin-bottom: 34px;
-    font-weight: normal;
     padding-left: 20%;
 }
 
@@ -130,26 +134,23 @@ section img {
     object-fit: contain;
     background-color: lightgreen;
 }
-.edu-sector ul{
-    display: flex;
-    justify-content: space-around;
-}
-.edu-sector li{
-    padding: 2em;
-    list-style-type: none;
-}
 
 
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 880px) {
     main {
-        width: 90vw;
-        font-size: .9em;
+        font-size: 1em;
+        margin: 0px;
+
     }
     .container {
         width: auto;
         padding-top: 30px;
         padding-right: 10px;
+    }
+    header, .wrapper {
+        width: 90vw;
     }
     .mobile {
         display: flex;
@@ -164,8 +165,18 @@ section img {
         color: rgba(255, 255, 255, 0.781);
     }
     .edu-sector ul{
-        display: block;
-        justify-content: space-around;
+        flex-direction: column;
     }
   
+}
+@media screen and (min-width:750px){
+    .edu-sector ul{
+    display: flex;
+    padding: 0px;
+    justify-content: start;
+}
+.edu-sector li{
+    padding-right: 2em;
+    list-style-type: none;
+}
 }
