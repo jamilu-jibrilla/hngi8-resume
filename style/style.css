@@ -167,6 +167,9 @@ section img {
     .edu-sector ul{
         flex-direction: column;
     }
+    .image img {
+        margin-right: 7px;
+    }
   
 }
 @media screen and (min-width:750px){
