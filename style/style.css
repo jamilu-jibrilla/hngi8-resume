@@ -132,6 +132,9 @@ section img {
   object-fit: contain;
   background-color: lightgreen;
 }
+section {
+  text-align: justify;
+}
 
 @media screen and (max-width: 880px) {
   main {
@@ -142,7 +145,7 @@ section img {
   .container {
     width: auto;
     padding-top: 30px;
-    padding-right: 10px;
+    padding-right: 15px;
   }
   header,
   .wrapper {
