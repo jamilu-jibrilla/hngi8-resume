@@ -95,7 +95,7 @@ aside > div {
 .container {
   color: black;
   background-color: white;
-  padding: 10px 20px 0px 30px;
+  padding: 10px 35px 0px 30px;
 }
 
 .container p,
@@ -121,7 +121,11 @@ aside a {
   padding-bottom: 4px;
   border-bottom: 1.4px solid rgb(97, 95, 95);
 }
-
+section a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+  font-style: italic;
+}
 .mobile {
   display: none;
 }
@@ -131,9 +135,6 @@ section img {
   height: 50px;
   object-fit: contain;
   background-color: lightgreen;
-}
-section {
-  text-align: justify;
 }
 
 @media screen and (max-width: 880px) {
@@ -147,12 +148,18 @@ section {
     padding-top: 30px;
     padding-right: 15px;
   }
+
   header,
   .wrapper {
     width: 90vw;
   }
+
   .mobile {
     display: flex;
+  }
+
+  section {
+    text-align: justify;
   }
 
   aside {
