@@ -1,3 +1,3 @@
 # my-resume
 My résumé to join a team at HNGi8 Internship
-Link: https://jamilu-jibrilla.github.io/my-resume/
+Link: https://jamilu-jibrilla.github.io/hngi8-resume/
